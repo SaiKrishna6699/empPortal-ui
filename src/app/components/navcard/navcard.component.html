@@ -1,0 +1,21 @@
+<div
+  class="w-[15rem] h-[10rem] rounded-md text-white flex flex-col justify-stretch items-center"
+  [ngClass]="bgColor"
+>
+  <div
+    class="w-full h-[38%] border-b-[1px] border-gray-200 flex-col justify-center items-center"
+  >
+    <p class="pl-4 pt-4 text-[0.9rem] font-bold">{{ title }}</p>
+  </div>
+  <div class="w-full h-[62%] flex flex-row items-center">
+    <div class="h-full w-[20%] flex justify-center items-center p-3 pb-6">
+      <i
+        class="object-contain text-[1.8rem] leading-[2.3rem]"
+        [ngClass]="icon"
+      ></i>
+    </div>
+    <div class="h-full w-[80%] flex justify-start items-center p-2 pb-6">
+      <p class="text-[0.7rem] font-bold">{{ desc }}</p>
+    </div>
+  </div>
+</div>
